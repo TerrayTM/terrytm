@@ -1,0 +1,42 @@
+.Root {
+    display: flex;
+    min-height: 100%;
+    flex-flow: column;
+}
+
+.NoScript {
+  box-shadow: 0 0 6px 4px #ccc;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  margin: 64px auto 0 auto;
+  padding: 32px;
+  background-color: ghostwhite;
+  box-sizing: border-box;
+}
+  
+.NoScript h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  user-select: none;
+  cursor: default;
+}
+
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-prev::before {
+  background-color: green;
+  border-radius: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.slick-arrow.slick-next::before {
+  padding: 8px 4px 8px 6px;
+  content: ">";
+}
+
+.slick-arrow.slick-prev::before {
+  padding: 8px 6px 8px 4px;
+  content: "<";
+}
