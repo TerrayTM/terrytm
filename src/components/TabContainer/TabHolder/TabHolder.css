@@ -1,0 +1,28 @@
+.TabHolder {
+    display: none;
+}
+
+.Show {
+    display: block;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+    .Show {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .Show {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .Show {
+        grid-template-columns: 1fr 1fr;
+    }
+}

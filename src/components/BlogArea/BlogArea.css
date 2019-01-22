@@ -1,0 +1,32 @@
+.BlogArea {
+    padding: 80px 0;
+}
+
+.Header {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 24px;
+}
+
+.Row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    box-shadow: 0 0 12px 4px #c9c7d4;
+}
+
+@media (max-width: 800px) {
+    .Row {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .Row {
+        grid-template-columns: auto;
+    }
+
+    .BlogArea .Row:last-child {
+        display: none;
+    }
+}

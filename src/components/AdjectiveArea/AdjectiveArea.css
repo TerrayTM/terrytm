@@ -1,0 +1,17 @@
+.AdjectiveArea {
+    background-color: ghostwhite;
+    border-bottom: solid 1px #d6d6f1;
+}
+
+.AdjectiveArea > div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1530px;
+}
+
+@media (max-width: 1100px) {
+    .AdjectiveArea > div {
+        display: none;
+    }
+}

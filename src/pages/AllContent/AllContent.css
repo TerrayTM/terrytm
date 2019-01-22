@@ -1,0 +1,13 @@
+.Content {
+    padding: 80px 0;
+}
+
+.Content > div {
+    max-width: 1200px;
+    margin: auto;
+    width: 80%;
+}
+
+.SpinnerHolder {
+    margin-top: 80px;
+}

@@ -1,0 +1,13 @@
+.NavigationItems {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.SideBar {
+    flex-flow: column;
+    align-items: flex-start;
+}

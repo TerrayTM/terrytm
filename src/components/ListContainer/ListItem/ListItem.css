@@ -1,0 +1,43 @@
+.ListItem {
+    border-radius: 2px;
+    border: 8px solid gold;
+    width: 220px;
+    height: 134px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #eaf1f1;
+    box-shadow: 0 1px 2px #00000014;
+    margin-bottom: 8px;
+}
+
+.ListItem > div {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background: ghostwhite;
+    transition: opacity 0.3s;
+    padding: 16px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.ListItem > div:hover {
+    opacity: 1.0;
+}
+
+.ListItem h6 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+}
+
+.ListItem p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.Link {
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}

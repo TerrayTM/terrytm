@@ -1,0 +1,28 @@
+.Image {
+    height: 260px;
+    overflow: hidden;
+}
+
+.Image > div {
+    transform: scale(1.0);
+    transition: transform 0.3s;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.Image:hover > div {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+    .Image {
+        height: 160px;
+    }
+}
+
+@media (max-width: 800px) {
+    .Image {
+        height: 260px;
+    }
+}

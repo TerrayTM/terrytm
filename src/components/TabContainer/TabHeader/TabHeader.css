@@ -1,0 +1,28 @@
+.TabHeader {
+    cursor: pointer;
+    width: 100%;
+    border-bottom: 1px solid #c5c5c5;
+    text-align: center;
+    padding: 16px 0;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.TabHeader > span {
+    font-weight: bold;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.TabHeader:hover > span {
+    opacity: 1.0;
+}
+
+.Selected {
+    border-bottom: 1px solid #4e2be9;
+    background-color: #4e2be913;
+}
+
+.Selected > span {
+    opacity: 1.0;
+}

@@ -1,0 +1,11 @@
+.Item {
+    text-transform: uppercase;
+    opacity: 0.3;
+    user-select: none;
+    font-size: 28px;
+    transition: opacity 0.3s;
+}
+
+.Item:hover {
+    opacity: 0.6;
+}

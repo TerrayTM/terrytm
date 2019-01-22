@@ -1,0 +1,154 @@
+.Project {
+    padding: 80px 0;
+}
+
+.Project > div {
+    max-width: 1260px;
+    margin: auto;
+    width: 85%;
+}
+
+.Project hr {
+    border: none;
+    border-top: 1px solid #c5c5c5;
+}
+
+.Content {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ImagePanel {
+    width: 100%;
+}
+
+.Name {
+    margin: 0 0 16px 0; 
+    font-size: 38px;
+    display: inline-block;
+    position: relative;
+}
+
+.Name::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -24px;
+    background-color: #7474fc;
+}
+
+.Author, 
+.Date {
+    display: inline-block;
+    margin: 0 0 0 16px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.Author::before, 
+.Date::before {
+    content: " ";
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.Author::before {
+    background-image: url(../../assets/images/userInterfaces/user.png);
+}
+
+.Date::before {
+    background-image: url(../../assets/images/userInterfaces/date.png);
+}
+
+.Description {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-left: 24px;
+    border: 2px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 24px;
+    width: 434px;
+    box-sizing: border-box;
+}
+
+.Description h2 {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 14px 0;
+}
+
+.Description h2::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -22px;
+    background-color: #7474fc;
+}
+
+.Description p {
+    line-height: 28px;
+    text-align: justify;
+}
+
+.Grid {
+    margin: 16px 0;
+    display: grid;
+    grid-row-gap: 16px;
+}
+
+.TagHolder {
+    margin-top: 12px;
+}
+
+.TagHolder span {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.TagHolder span:last-child {
+    margin-right: 0;
+}
+
+.SpinnerHolder {
+    margin-top: 80px;
+}
+
+@media (max-width: 1480px) {
+    .Content {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .Description {
+        margin: 24px 0 0 0;
+        min-height: 672px;
+        width: 100%;
+    }
+
+    .Project > div {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Author, 
+    .Date {
+        display: block;
+        margin: 0 0 24px 0;
+    }
+
+    .Name::after {
+        display: none;
+    }
+}

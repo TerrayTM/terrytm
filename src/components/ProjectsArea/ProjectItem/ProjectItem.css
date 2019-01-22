@@ -1,0 +1,33 @@
+.ProjectItem {
+    width: 300px;
+    height: 360px;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 #575757;
+    background-color: white;
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.ProjectItem:hover {
+    box-shadow: 0 1px 9px 1px #83b2e2;
+}
+
+.ProjectItem > img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.ProjectItem h4 {
+    margin: 0;
+}
+
+.ProjectItem p {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.Holder {
+    padding: 16px;
+}

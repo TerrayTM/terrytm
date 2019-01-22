@@ -1,0 +1,42 @@
+.SlideShow {
+    border: 2px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 40px 24px 24px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.Main {
+    width: 100%;
+    height: 456px;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.SelectorHolder {
+    margin: 28px 0 20px 0;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.SelectorHolder div {
+    outline: none;
+}
+
+@media (max-width: 1480px) {
+    .SlideShow {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .Main {
+        height: 44vw;
+    }
+}

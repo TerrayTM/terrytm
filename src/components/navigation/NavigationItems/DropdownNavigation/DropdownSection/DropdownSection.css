@@ -1,0 +1,62 @@
+.DropdownSection {
+    padding: 32px 8px;
+    width: 100%;
+}
+
+.DropdownSection ul {
+    padding: 0;
+}
+
+.DropdownSection li {
+    list-style: none;
+}
+
+.DropdownSection a {
+    text-decoration: none;
+    opacity: 0.6;
+    color: black;
+    transition: opacity 0.3s ease-in-out;
+    display: block;
+}
+
+.DropdownSection a:hover {
+    opacity: 1.0;
+}
+
+.DropdownSection hr {
+    height: 1px;
+    border: 0;
+    border-bottom: 1px solid #919191;
+}
+
+.Extender .Title {
+    visibility: hidden;
+}
+
+.SideBar.DropdownSection {
+    width: 100%;
+    padding: 18px 0 0 0;
+}
+
+.SideBar.Extender {
+    padding: 0;
+}
+
+.SideBar.NoDisplay {
+    display: none;
+}
+
+.Label {
+    opacity: 0.6;
+    margin: 0;
+}
+
+.Title {
+    font-weight: bold;
+    opacity: 0.6;
+    margin: 0;
+}
+
+.active {
+    opacity: 1.0 !important;
+}

@@ -1,0 +1,28 @@
+.Error {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.Error h1 {
+    font-size: 86px;
+    margin: 0;
+}
+
+.Error h2 {
+    line-height: 34px;
+}
+
+.Error button {
+    width: auto;
+    padding: 16px 32px;
+}
+
+.MobileOnly {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .MobileOnly {
+        display: block;
+    }
+}

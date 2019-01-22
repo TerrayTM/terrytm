@@ -1,0 +1,9 @@
+.ActivityArea {
+    padding: 80px 0;
+}
+
+.ActivityArea > div {
+    max-width: 1000px;
+    margin: auto;
+    width: 80%;
+}

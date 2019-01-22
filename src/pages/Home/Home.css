@@ -1,0 +1,70 @@
+.Picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px solid aliceblue;
+    background-image: url(../../assets/images/userInterfaces/terry.jpg);
+    background-size: cover;
+    margin: 20px auto auto auto;
+}
+
+.Heading {
+    margin: 14px 0 0 0;
+    color: aliceblue;
+}
+
+h1.Heading {
+    font-size: 38px;
+}
+
+.AnimatedHeading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.AnimatedHeading > h2 {
+    margin-right: 8px;
+}
+
+.AnimatedHeading > div {
+    position: relative;
+    overflow: hidden;
+}
+
+.Secondary {
+    position: absolute;
+    top: 0;
+}
+
+.MobileOnly470, 
+.MobileOnly600,
+.MobileOnly750 {
+    display: none;
+}
+
+@media (max-width: 470px) {
+    .MobileOnly470 {
+        display: block;
+    }
+
+    .DesktopOnly470 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .MobileOnly600 {
+        display: block;
+    }
+
+    .DesktopOnly600 {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .MobileOnly750 {
+        display: block;
+    }
+}

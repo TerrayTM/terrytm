@@ -1,0 +1,10 @@
+.HeroArea {
+    padding: 40px 0;
+    user-select: none;
+    background-repeat: repeat;
+}
+
+.HeroArea > div {
+    margin: auto;
+    text-align: center;
+}

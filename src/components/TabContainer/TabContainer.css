@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 500px) {
+    .Header {
+        flex-flow: column;
+    }
+}

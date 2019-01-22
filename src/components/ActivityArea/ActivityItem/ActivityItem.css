@@ -1,0 +1,52 @@
+.Item {
+    display: flex;
+    padding: 24px 0;
+    flex-flow: row;
+    align-items: center;
+}
+
+.Item > div {
+    margin-left: 64px;
+}
+
+.Item > a > img {
+    width: 180px;
+}
+
+.Link {
+    padding: 32px;
+    box-shadow: 0 2px 16px #838383;
+    transition: box-shadow 0.3s;
+}
+
+.Link:hover {
+    box-shadow: 0 2px 16px #b9b9b9;
+}
+
+.Header {
+    margin-top: 0;
+}
+
+.Description  {
+    margin: 0;
+    line-height: 32px;
+    text-align: justify;
+}
+
+@media (max-width: 890px) {
+    .Item {
+        flex-flow: column;
+    }
+
+    .Item > a {
+        margin-bottom: 48px;
+    }
+
+    .Item > div {
+        margin-left: 0;
+    }
+
+    .Header {
+        text-align: center;
+    }
+}

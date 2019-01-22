@@ -1,0 +1,129 @@
+.Dropdown {
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.Dropdown > div:first-child {
+    opacity: 0.6;
+    padding: 12px 16px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.Dropdown > div:first-child:hover {
+    opacity: 1.0;
+}
+
+.Tab::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: " ";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.DropdownContent {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #d8d8d8;
+    margin-top: 60px;
+    padding: 0 10%;
+    box-sizing: border-box;
+    z-index: 5;
+    cursor: default;
+}
+
+.DropdownContent > div {
+    flex-flow: row;
+}
+
+.DropdownContent.Show > div {
+    display: flex;
+    max-width: 1230px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.DropdownContent.Show {
+    display: block;
+}
+
+.Dropdown > div:first-child.Show {
+    opacity: 1.0;
+}
+
+.active,
+.active > div:first-child {
+    opacity: 1.0 !important;
+    background-color: #eeeeee;
+}
+
+.Icon {
+    display: none;
+}
+
+.SideBar .DropdownContent {
+    flex-flow: column;
+    position: static;
+    margin: 0;
+    padding: 0 32px 18px 32px;
+    border-top: 1px solid #d8d8d8;
+}
+
+.SideBar .DropdownContent > div {
+    flex-flow: column;
+}
+
+.SideBar.Dropdown > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.SideBar.Dropdown {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.SideBar .Icon {
+    height: 26px;
+    padding: 0 16px;
+    display: block;
+    opacity: 0.6;
+}
+
+.Spinner {
+    margin: auto;
+    transform: scale(0.5);
+}
+
+.Spinner div {
+    padding: 0;
+}
+
+.Reload {
+    color: #6262ff;
+    cursor: pointer;
+}
+
+.Reload:hover {
+    color: #0000fa;
+}
+
+.ErrorContainer {
+    margin: 54px auto;
+}
+
+.SideBar .ErrorContainer {
+    margin: 18px 0 0 0;
+}

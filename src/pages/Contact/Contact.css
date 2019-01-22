@@ -1,0 +1,21 @@
+.Header {
+    color: aliceblue;
+}
+
+h1.Header {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+p.Header {
+    font-size: 18px;
+}
+
+p.Header span {
+    font-size: 18px;
+    padding: 4px 8px;
+}
+
+p.Header span:hover {
+    background-color: #ffff006b;
+}

@@ -1,0 +1,10 @@
+.Heading {
+    margin: 0 0 24px 0;
+    font-size: 34px;
+    text-align: left;
+}
+
+.Line {
+    border: none;
+    border-top: 1px solid #c5c5c5;
+}

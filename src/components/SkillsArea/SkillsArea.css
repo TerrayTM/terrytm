@@ -1,0 +1,10 @@
+.SkillsArea {
+    padding: 80px 0;
+    background: #F2F2F2;
+}
+
+.SkillsArea > div {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}

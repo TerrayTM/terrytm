@@ -1,0 +1,28 @@
+.ListContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 42px;
+    padding: 24px 0;
+}
+
+.ListContainer p {
+    margin: 0;
+}
+
+@media (max-width: 1320px) {
+    .ListContainer {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 990px) {
+    .ListContainer {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 670px) {
+    .ListContainer {
+        grid-template-columns: auto;
+    }
+}

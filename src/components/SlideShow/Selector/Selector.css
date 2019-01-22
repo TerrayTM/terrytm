@@ -1,0 +1,13 @@
+.Selector {
+    border: 1px solid #81a38e;
+    width: 140px;
+    height: 90px;
+    background-size: cover;
+    background-position: center;
+    margin: 4px auto;
+    cursor: pointer;
+}
+
+.Selected {
+    box-shadow: 0 0 4px 2px #31bdbd;
+}

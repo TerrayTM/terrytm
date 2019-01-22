@@ -1,0 +1,48 @@
+.SkillItem {
+    text-align: center;
+    user-select: none;
+    padding: 8px;
+}
+
+.SkillItem.AllowHover {
+    padding: 0;
+}
+
+.SkillItem:hover .Level {
+    display: block;
+}
+
+.SkillItem:hover .Star {
+    visibility: visible;
+}
+
+.AllowHover:hover .Name {
+    display: none;
+}
+
+.Name {
+    margin-bottom: 0;
+}
+
+.SkillItem img {
+    width: 64px;
+}
+
+.Level {
+    display: none;
+    margin-bottom: 0;
+}
+
+.Star {
+    background-image: url(../../../assets/images/userInterfaces/star.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.Container {
+    margin-bottom: 16px;
+}
