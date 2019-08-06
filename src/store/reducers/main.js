@@ -1,11 +1,5 @@
-import * as actionTypes from '../actions/actionTypes';
-
-const apply = (state, newState) => {
-    return {
-        ...state,
-        ...newState
-    };
-};
+import * as actionTypes from '../actions/main/actionTypes';
+import apply from '../../helpers/apply';
 
 const initalState = {
     blogData: null,
