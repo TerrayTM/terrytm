@@ -43,7 +43,7 @@ class NavigationItems extends Component {
     }
 
     toggleDropdown = (id) => {
-        this.setState(previous => {
+        this.setState((previous) => {
             return {
                 dropdownShown: previous.dropdownShown === id ? 0 : id
             };  
@@ -65,9 +65,9 @@ class NavigationItems extends Component {
 
 const stateToProps = state => {
     return {
-        blogData : state.blogData,
-        projectsData: state.projectsData
+        blogData: state.main.blogData,
+        projectsData: state.main.projectsData
     };
-}
+};
 
 export default withRouter(connect(stateToProps)(NavigationItems));

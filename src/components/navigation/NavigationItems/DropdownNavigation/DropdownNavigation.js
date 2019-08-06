@@ -4,17 +4,25 @@ import DropDownSection from './DropdownSection/DropdownSection';
 import classes from './DropdownNavigation.css'
 import Spinner from '../../../userInterfaces/Spinner/Spinner';
 import ErrorHandler from '../../../ErrorHandler/ErrorHandler';
+import { clear } from '../../../../helpers/cache';
+
+const restartApp = () => {
+    clear();
+    window.location.reload(true);
+};
+
+const errorElement = <div className={classes.ErrorContainer}><ErrorHandler error={<p>An error has occurred. Please try <span className={classes.Reload} onClick={restartApp}>reloading the page</span>.</p>}/></div>;
 
 const dropdownNavigation = (props) => {
     let data = <div className={classes.Spinner}><Spinner/></div>;
     if (props.data) {
         if (props.data === -1) {
-            data = <div className={classes.ErrorContainer}><ErrorHandler error={<p>An error has occurred. Please try <span className={classes.Reload} onClick={() => window.location.reload(true)}>reloading the page</span>.</p>}/></div>;
+            data = errorElement;
         }
         else {
             if (props.name === 'Projects') {
                 if (!props.data['Past Projects'] || !props.data['Active Projects']) {
-                    data = <div className={classes.ErrorContainer}><ErrorHandler error={<p>An error has occurred. Please try <span className={classes.Reload} onClick={() => window.location.reload(true)}>reloading the page</span>.</p>}/></div>;
+                    data = errorElement;
                 } else {
                     data = [];
                     data.push(<DropDownSection sideBar={props.sideBar} title={'Active Projects'} items={props.data['Active Projects']} key={'Active Projects'}/>);

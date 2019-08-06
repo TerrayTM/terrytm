@@ -6,6 +6,7 @@
 .AdjectiveArea > div {
     display: flex;
     justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto;
     max-width: 1530px;
 }

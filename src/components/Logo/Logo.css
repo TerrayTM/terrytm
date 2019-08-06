@@ -1,10 +1,16 @@
-.Logo {
+.Logo a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 106px;
     height: 100%;
     user-select: none;
+    text-decoration: none;
+    color: black;
+}
+
+.Logo a:hover {
+    color: black;
 }
 
 .Logo img {
