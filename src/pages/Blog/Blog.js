@@ -19,7 +19,7 @@ class Blog extends Component {
         this.setState({ content: null });
         if (this.assertProps(this.props)) {
             try {
-                let response = await fetch(`***type=blog&category=${this.props.match.params.category}&post=${this.props.match.params.name}`);
+                let response = await fetch(`https://terrytm.com/services/rest_api.php?type=blog&category=${this.props.match.params.category}&post=${this.props.match.params.name}`);
                 response = await response.json();
                 if (!response || response.error) {
                     this.setState({ content: 'ERROR_BAD_FILE' });

@@ -14,7 +14,7 @@ class AllContent extends Component {
     fetchData = async () => {
         this.setState({ list: null });
         try {
-            let response = await fetch(`***type=${this.props.type}&list=true`);
+            let response = await fetch(`https://terrytm.com/services/rest_api.php?type=${this.props.type}&list=true`);
             response = await response.json();
             if (!response || response.error) {
                 this.setState({ list: 'ERROR_BAD_FILE' });

@@ -13,6 +13,11 @@
     color: aliceblue;
 }
 
+.LeftAlign {
+    white-space: nowrap;
+    text-align: left;
+}
+
 h1.Heading {
     font-size: 38px;
 }
@@ -35,6 +40,14 @@ h1.Heading {
 .Secondary {
     position: absolute;
     top: 0;
+}
+
+.TextMeasure {    
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    white-space: nowrap;
 }
 
 .MobileOnly470, 

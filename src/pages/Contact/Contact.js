@@ -31,7 +31,7 @@ class Contact extends Component {
             }) 
         };
         try {
-            let response = await fetch('***', content);
+            let response = await fetch('https://terrytm.com/services/rest_api.php', content);
             response = await response.json();
             if (response.status && response.status === 'SUCCESS') {
                 this.setState({ success: true, loading: false });

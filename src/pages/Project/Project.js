@@ -9,7 +9,7 @@ import Tag from '../../components/userInterfaces/Tag/Tag';
 import Button from '../../components/userInterfaces/Button/Button';
 import * as Languages from '../../constants/languages';
 
-class Projects extends Component { 
+class Project extends Component { 
     state = {
         title: null,
         creator: null,
@@ -31,7 +31,7 @@ class Projects extends Component {
             try {
                 const category = this.props.match.params.category;
                 const post = this.props.match.params.name;
-                let response = await fetch(`***type=projects&category=${category}&post=${post}`);
+                let response = await fetch(`https://terrytm.com/services/rest_api.php?type=projects&category=${category}&post=${post}`);
                 response = await response.json();
                 if (!response || response.error) {
                     this.setState({ content: 'ERROR_BAD_FILE' });
@@ -39,7 +39,7 @@ class Projects extends Component {
                 }
                 const images = [];
                 for (let i = 1; i <= response.number; ++i) {
-                    images.push(`***/${category}/${post}/${i}.png`);
+                    images.push(`https://terrytm.com/content/projects-content/${category}/${post}/${i}.png`);
                 }
                 this.setState({
                     title: response.name,
@@ -102,7 +102,7 @@ class Projects extends Component {
                                     <div>
                                         <h2>{this.state.technologies.length > 1 ? 'Technologies' : 'Technology'}</h2>
                                         <hr/>
-                                        <div className={classes.Grid} style={{ gridTemplateColumns: this.state.technologies.reduce((total, current , i) => i > 3 ? total : total + ' 1fr', '') }}>
+                                        <div className={classes.Grid} style={{ gridTemplateColumns: this.state.technologies.reduce((total, current , i) => i > 3 ? total : `${total} 1fr`, '') }}>
                                             {this.state.technologies.map((i, index) => <SkillItem icon={Languages[i]} display size="46px" key={`Skill ${index}`}/>)}
                                         </div>
                                     </div>
@@ -124,4 +124,4 @@ class Projects extends Component {
     }
 }
 
-export default Projects;
+export default Project;
